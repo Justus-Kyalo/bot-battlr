@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
-import  "../components/css/FetchBot.css"
+import "../components/css/FetchBot.css";
+import { Link } from "react-router-dom";
+
 
 function FetchBots() {
   const [bots, setBots] = useState([]);
@@ -12,14 +14,14 @@ function FetchBots() {
     <>
       {bots.map((bot) => {
         return (
-          <div className="card" style={{ width: "20rem" }}>
+          <div key={bot.id} className="card" style={{ width: "20rem" }}>
             <img src={bot.avatar_url} className="card-img-top" alt="..." />
             <div className="card-body">
-              <h5 className="card-title">Name:   {bot.name}</h5>
+              <h5 className="card-title">Name: {bot.name}</h5>
 
-              <a href="#" className="btn btn-primary">
+              <Link to="/Details" className="btn btn-primary">
                 View Bot Details
-              </a>
+              </Link>
               <button className="btn btn-success">Enlist</button>
             </div>
           </div>
