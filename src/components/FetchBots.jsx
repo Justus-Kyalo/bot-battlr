@@ -36,9 +36,9 @@ function FetchBots() {
 
 
   return (
-    <>
+    < div className="body">
       <EnlistedBots enlisted={enlisted} />
-      <div className="body">
+      <div >
         {bots.map((bot) => {
           return (
             <div key={bot.id} className="card m-4" style={{ width: "20rem" }}>
@@ -58,7 +58,7 @@ function FetchBots() {
           );
         })}
       </div>
-    </>
+    </div>
   );
 }
 

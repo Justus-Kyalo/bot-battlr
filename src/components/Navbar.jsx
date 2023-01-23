@@ -1,20 +1,17 @@
 import React from "react";
-
-
+import "./css/Navbar.css"
 
 function Navbar() {
   return (
-    <div>
-      <nav className="navbar bg-body-tertiary" >
+    <div className="navbar">
+      <nav className="navbar ">
         <div className="container-fluid">
-          
-          
-            <p className="btn btn-outline-success d-flex navbar-brand" type="submit">
-              Bot Battlr App
-            </p>
-
-            
-          
+          <p
+            className="btn btn-outline-success d-flex navbar-brand"
+            type="submit"
+          >
+            Bot Battlr App
+          </p>
         </div>
       </nav>
     </div>

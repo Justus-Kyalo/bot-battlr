@@ -7,7 +7,7 @@ import EnlistedBots from "./components/EnlistedBots";
 import Navbar from "./components/Navbar";
 
 function App() {
-  return (<>
+  return (<div className="App">
     <Navbar/>
     <Routes>
       
@@ -15,7 +15,7 @@ function App() {
       <Route path="/bot-details/:id" element={<BotDetails />} />
       <Route path="/enlistedbots" element={<EnlistedBots />} />
     </Routes>
-    </>);
+    </div>);
 }
 
 export default App;
