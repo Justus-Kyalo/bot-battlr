@@ -6,14 +6,10 @@ import BotDetails from "./components/BotDetails";
 
 function App() {
   return (
-    <div className="App">
-      <FetchBots />
-      <Routes>
-        <Route path="/Details" element = {<BotDetails />}/>
-          
-        
-      </Routes>
-    </div>
+    <Routes>
+      <Route path="/" element={<FetchBots />} />
+      <Route path="/bot-details/:id" element={<BotDetails />} />
+    </Routes>
   );
 }
 
