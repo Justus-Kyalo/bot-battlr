@@ -7,7 +7,7 @@ function BotDetails() {
   //  console.log(id);
 
   useEffect(() => {
-    fetch(`http://localhost:3000/bots/${id}`)
+    fetch(`https://robots-api-1dpf.onrender.com/bots/${id}`)
       .then((res) => res.json())
       .then((data) => {
         // const bot = data.find((bot) => bot.id === id);

@@ -9,7 +9,7 @@ function FetchBots() {
   const [counter, setCounter] = useState(1);
 
   useEffect(() => {
-    fetch("http://localhost:3000/bots")
+    fetch("https://robots-api-1dpf.onrender.com/bots")
       .then((res) => res.json())
       .then((data) => {
         const newBots = data.map(bot => {
@@ -38,7 +38,7 @@ function FetchBots() {
   return (
     <>
       <EnlistedBots enlisted={enlisted} />
-      <div>
+      <div className="body">
         {bots.map((bot) => {
           return (
             <div key={bot.id} className="card m-4" style={{ width: "20rem" }}>
