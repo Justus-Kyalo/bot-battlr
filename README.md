@@ -1,4 +1,5 @@
 # Bot Battlr App
+![screenshot]("https://github.com/RemmyKyalo/bot-battlr/tree/main/images/screenshot.png")
 - This React application allows users to view and enlist robots from a remote API. The app fetches data from the API (https://robots-api-1dpf.onrender.com/bots) and uses a card to render the robots.
 
 # Features
