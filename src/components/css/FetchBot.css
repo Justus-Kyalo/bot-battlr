@@ -1,7 +1,8 @@
 .card{
-   display: flex;
+   
    justify-content:space-between;
    flex-wrap: wrap;
+   float: left;
    
-    margin-top: 50px;
+    margin: auto;
 }
