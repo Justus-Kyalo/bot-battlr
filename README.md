@@ -13,7 +13,7 @@ To run the application, follow these steps:
 - Clone or download the repository
 - In the project directory, run npm install to install the necessary dependencies
 - Run npm start to start the development server
-- The app will be available at http://localhost:3000 in your web browser
+- The app will be available at https://bot-battlr1.vercel.app in your web browser
 # Tech Stack
 - React
 - React Router
