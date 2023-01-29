@@ -18,6 +18,7 @@ function BotDetails() {
 
   return (
     <div>
+      <h2 style={{color:"blue"}}>Selected Bot</h2>
       {botDetails && (
         <div>
           <h1> Name :{botDetails.name}</h1>
